@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Directory of Massachusetts clinics with specialties, contacts and patient stories.">
+<title>All Clinics – MA Health</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#00857A;--primary-dark:#006B62;--text:#0F172A;--text-mid:#374151;--text-light:#5B6472;--bg-page:#f3eee8;--bg-light:#F4F7FA;--surface:#FFF;--border-light:#DDE2E8;--subtle-accent:#E6F4F1;--focus:#F2B134}
+[data-theme="dark"]{--primary:#2FB3A6;--primary-dark:#8FE3DA;--text:#F3F4F6;--text-mid:#D1D5DB;--text-light:#AEB6C4;--bg-page:#0F172A;--bg-light:#1B2740;--surface:#172038;--border-light:#2B364B;--subtle-accent:#123531}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg-page);color:var(--text);font-family:'Roboto',sans-serif;font-size:16px;line-height:1.65}
+img{max-width:100%}a{color:inherit}button{font-family:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-link{position:absolute;left:16px;top:-60px;background:var(--primary-dark);color:#fff;padding:12px 18px;border-radius:6px;font-weight:700;z-index:1000;text-decoration:none}.skip-link:focus{top:16px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.g12{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px}
+.c3{grid-column:span 3}.c4{grid-column:span 4}.c6{grid-column:span 6}.c12{grid-column:span 12}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border-light)}
+.topbar-inner{max-width:1180px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo img{height:54px;display:block}[data-theme="dark"] .logo img{background:#fff;border-radius:8px;padding:6px}
+.topbar-right{display:flex;align-items:center;gap:14px}
+.head-mail{width:60px;height:60px;border-radius:50%;background:#00857A;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.head-mail svg{width:28px;height:28px}
+.theme-toggle{width:48px;height:48px;border-radius:50%;border:none;background:#00857A;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0}
+.theme-toggle .knob svg{width:24px;height:24px;display:block}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:1px solid var(--border-light);border-radius:6px;cursor:pointer;padding:9px;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+.hamburger span{width:22px;height:2px;background:var(--text);display:block}
+.navstrip{background:#fbfaf8;border-bottom:1px solid var(--border-light)}
+[data-theme="dark"] .navstrip{background:var(--bg-light)}
+.nav-menu{max-width:1180px;margin:0 auto;padding:0 20px;list-style:none;display:flex;gap:4px;flex-wrap:wrap}
+.nav-menu a{display:block;padding:14px 12px;font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--text-mid);text-decoration:none;border-top:3px solid transparent}
+.nav-menu a:hover,.nav-menu a.active{color:var(--primary-dark);border-top-color:var(--primary)}
+.page-head{background:var(--surface);border-bottom:1px solid var(--border-light);padding:44px 0}
+.page-head h1{font-family:'Poppins',sans-serif;font-size:clamp(30px,3.4vw,44px);margin:0 0 8px;text-transform:uppercase;letter-spacing:-.01em}
+.page-head p{margin:0;color:var(--text-light);max-width:760px}
+main{padding:50px 0 70px}
+.card{background:var(--surface);border-radius:6px;box-shadow:0 6px 24px rgba(15,23,42,.07);overflow:hidden}
+.card-body{padding:20px 22px}
+.card h2,.card h3{font-family:'Poppins',sans-serif;margin:0 0 6px;font-size:20px}
+.meta{color:var(--text-light);font-size:16px;margin:0 0 10px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+.badge{background:var(--subtle-accent);color:var(--primary-dark);font-weight:700;font-size:16px;padding:5px 12px;border-radius:999px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:#00857A;color:#fff;border:none;border-radius:6px;padding:12px 20px;font-weight:700;font-size:16px;text-decoration:none;cursor:pointer;min-height:44px}
+.btn:hover{background:var(--primary-dark)}
+.btn.ghost{background:var(--surface);color:var(--text);border:1px solid var(--border-light)}
+.btn.ghost:hover{border-color:var(--primary);color:var(--primary-dark)}
+.review{border-top:1px solid var(--border-light);padding:12px 0 2px;font-size:16px}
+.review p{margin:0 0 6px;color:var(--text-mid)}
+.review .who{color:var(--text-light);font-size:16px}
+.stars{color:#B7791F;letter-spacing:2px}
+.thumb{width:100px;height:100px;border-radius:14px;object-fit:cover;flex-shrink:0;background:var(--subtle-accent)}
+.row{display:flex;gap:16px;align-items:center}
+.initials{width:100px;height:100px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:700;font-size:30px;color:#fff;flex-shrink:0}
+.center{text-align:center}
+.hidden{display:none!important}
+.contact-strip{margin-top:40px;background:var(--subtle-accent);border-radius:6px;padding:22px;display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}
+footer{background:#efece5;border-top:1px solid rgba(15,23,42,.15);padding:22px 0 26px;color:#0F172A;margin-top:70px}
+[data-theme="dark"] footer{background:#101a30;color:#F3F4F6;border-top-color:rgba(255,255,255,.15)}
+.f-nav{max-width:1180px;margin:0 auto 16px;padding:0 20px 16px;display:flex;gap:28px;overflow-x:auto;justify-content:center;border-bottom:1px solid rgba(15,23,42,.15)}
+[data-theme="dark"] .f-nav{border-bottom-color:rgba(255,255,255,.15)}
+.f-nav a{font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;white-space:nowrap;color:inherit}
+.f-nav a:hover{color:var(--primary);text-decoration:underline}
+.footer-inner{max-width:1180px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.f-design{display:flex;align-items:center;gap:10px}.f-design img{height:26px;display:block}
+[data-theme="dark"] .f-design img{background:#fff;border-radius:4px;padding:3px}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+@media(max-width:1024px){.c3{grid-column:span 6}.c4{grid-column:span 6}}
+@media(max-width:900px){.hamburger{display:flex}.nav-menu{display:none;flex-direction:column;padding:8px 20px 12px}.nav-menu.open{display:flex}.nav-menu a{border-top:none;border-bottom:1px solid var(--border-light)}}
+@media(max-width:768px){.c3,.c4,.c6{grid-column:span 12}.footer-inner{justify-content:center;text-align:center}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
+  <div class="topbar"><div class="topbar-inner">
+    <a href="ma-healthcare-finder.html" class="logo" aria-label="MA Health – home"><img src="logo.png" alt="MA Health"></a>
+    <div class="topbar-right">
+      <a class="head-mail" href="mailto:mahealth.us@gmail.com" aria-label="Email MA Health"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch theme"><span class="knob" aria-hidden="true"></span></button>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button>
+    </div>
+  </div></div>
+  <nav class="navstrip" aria-label="Primary"><ul class="nav-menu" id="nav-menu"><li><a href="ma-healthcare-finder.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="clinics.html" class="active" aria-current="page">Clinics</a></li><li><a href="diseases.html">Diseases</a></li><li><a href="doctors.html">Doctors</a></li><li><a href="ma-healthcare-finder.html#stories">Patient Stories</a></li></ul></nav>
+</header>
+<div class="page-head"><div class="wrap"><h1>All Clinics</h1><p>Every clinic in the MA Health directory — specialties, contact details, doctors and what patients say.</p></div></div>
+<main id="main"><div class="wrap">
+<div class="g12"><article class="card c6 dir-item">
+  <div class="card-body">
+    <h2>Beth Israel Deaconess Cardiology</h2>
+    <p class="meta">Boston, MA · Cardiology · <a href="https://www.bidmc.org" target="_blank" rel="noopener">Website</a> · (617) 667-7000</p>
+    <div class="badges"><span class="badge">Heart Disease</span><span class="badge">Dr. David Goldstein</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=2#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.8 out of 5</span><p>“Beth Israel Deaconess Cardiology handled my insurance questions patiently and the visit itself was thorough and unhurried.”</p><div class="who">— Leah K., Framingham</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.7 out of 5</span><p>“I was seen at Beth Israel Deaconess Cardiology within the same week. Friendly front desk, short wait, and a doctor who actually listened.”</p><div class="who">— Marcus N., Worcester</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 out of 5</span><p>“Beth Israel Deaconess Cardiology handled my insurance questions patiently and the visit itself was thorough and unhurried.”</p><div class="who">— Daniel Q., Belmont</div></div>
+  </div>
+</article><article class="card c6 dir-item">
+  <div class="card-body">
+    <h2>Boston Childrens Pulmonology</h2>
+    <p class="meta">Boston, MA · Pulmonology · <a href="https://www.childrenshospital.org" target="_blank" rel="noopener">Website</a> · (617) 355-6000</p>
+    <div class="badges"><span class="badge">Asthma</span><span class="badge">Dr. Thomas Anderson</span><span class="badge">Dr. Rachel Brown</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=4#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 out of 5</span><p>“From request to visit in four days. Boston Childrens Pulmonology kept me updated the whole way — exactly what busy families need.”</p><div class="who">— Marcus X., Medford</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.8 out of 5</span><p>“After months of putting it off, Boston Childrens Pulmonology made it easy — clear directions, kind staff, and a real follow-up call.”</p><div class="who">— Daniel C., Cambridge</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.7 out of 5</span><p>“From request to visit in four days. Boston Childrens Pulmonology kept me updated the whole way — exactly what busy families need.”</p><div class="who">— Grace F., Quincy</div></div>
+  </div>
+</article><article class="card c6 dir-item">
+  <div class="card-body">
+    <h2>Boston Dermatology Clinic</h2>
+    <p class="meta">Boston, MA · Dermatology · <a href="https://www.bostondenmatology.org" target="_blank" rel="noopener">Website</a> · (617) 262-5000</p>
+    <div class="badges"><span class="badge">Skin Issues</span><span class="badge">Dr. Victoria Long</span><span class="badge">Dr. Michael Powell</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=8#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 out of 5</span><p>“The coordinator at Boston Dermatology Clinic answered my questions by email before I even arrived. Care felt personal, not rushed.”</p><div class="who">— Mila P., Newton</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.8 out of 5</span><p>“Booked through MA Health and Boston Dermatology Clinic confirmed my appointment the next morning. The dermatology team explained every step clearly.”</p><div class="who">— Leah S., Somerville</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.7 out of 5</span><p>“The coordinator at Boston Dermatology Clinic answered my questions by email before I even arrived. Care felt personal, not rushed.”</p><div class="who">— Marcus V., Springfield</div></div>
+  </div>
+</article><article class="card c6 dir-item">
+  <div class="card-body">
+    <h2>Boston Medical Center Diabetes</h2>
+    <p class="meta">Boston, MA · Diabetes · <a href="https://www.bmc.org" target="_blank" rel="noopener">Website</a> · (617) 414-6000</p>
+    <div class="badges"><span class="badge">Diabetes</span><span class="badge">Dr. Lisa Romano</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=1#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 out of 5</span><p>“I was seen at Boston Medical Center Diabetes within the same week. Friendly front desk, short wait, and a doctor who actually listened.”</p><div class="who">— Nora T., Brookline</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.8 out of 5</span><p>“Boston Medical Center Diabetes handled my insurance questions patiently and the visit itself was thorough and unhurried.”</p><div class="who">— Tomás W., Framingham</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.7 out of 5</span><p>“I was seen at Boston Medical Center Diabetes within the same week. Friendly front desk, short wait, and a doctor who actually listened.”</p><div class="who">— Wren B., Worcester</div></div>
+  </div>
+</article><article class="card c6 dir-item">
+  <div class="card-body">
+    <h2>Brigham Orthopedic Associates</h2>
+    <p class="meta">Boston, MA · Orthopedics · <a href="https://www.brighamandwomens.org" target="_blank" rel="noopener">Website</a> · (617) 732-5500</p>
+    <div class="badges"><span class="badge">Arthritis</span><span class="badge">Dr. Joseph Bennett</span><span class="badge">Dr. Amanda Foster</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=6#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 out of 5</span><p>“I was seen at Brigham Orthopedic Associates within the same week. Friendly front desk, short wait, and a doctor who actually listened.”</p><div class="who">— Hannah T., Brookline</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.8 out of 5</span><p>“Brigham Orthopedic Associates handled my insurance questions patiently and the visit itself was thorough and unhurried.”</p><div class="who">— Ethan W., Framingham</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.7 out of 5</span><p>“I was seen at Brigham Orthopedic Associates within the same week. Friendly front desk, short wait, and a doctor who actually listened.”</p><div class="who">— Ivy B., Worcester</div></div>
+  </div>
+</article><article class="card c6 dir-item">
+  <div class="card-body">
+    <h2>Brigham Psychiatric Hospital</h2>
+    <p class="meta">Boston, MA · Psychiatry · <a href="https://www.brighamandwomens.org" target="_blank" rel="noopener">Website</a> · (617) 732-5500</p>
+    <div class="badges"><span class="badge">Mental Health</span><span class="badge">Dr. George Martinez</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=5#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 out of 5</span><p>“Brigham Psychiatric Hospital handled my insurance questions patiently and the visit itself was thorough and unhurried.”</p><div class="who">— Elena E., Belmont</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 out of 5</span><p>“I was seen at Brigham Psychiatric Hospital within the same week. Friendly front desk, short wait, and a doctor who actually listened.”</p><div class="who">— Aisha H., Brookline</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.8 out of 5</span><p>“Brigham Psychiatric Hospital handled my insurance questions patiently and the visit itself was thorough and unhurried.”</p><div class="who">— Noah K., Framingham</div></div>
+  </div>
+</article><article class="card c6 dir-item hidden">
+  <div class="card-body">
+    <h2>Brigham and Womens Endocrinology</h2>
+    <p class="meta">Boston, MA · Endocrinology · <a href="https://www.brighamandwomens.org" target="_blank" rel="noopener">Website</a> · (617) 732-5500</p>
+    <div class="badges"><span class="badge">Diabetes</span><span class="badge">Dr. Jennifer Adams</span><span class="badge">Dr. James Sullivan</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=1#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 out of 5</span><p>“Booked through MA Health and Brigham and Womens Endocrinology confirmed my appointment the next morning. The endocrinology team explained every step clearly.”</p><div class="who">— Noah M., Boston</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 out of 5</span><p>“The coordinator at Brigham and Womens Endocrinology answered my questions by email before I even arrived. Care felt personal, not rushed.”</p><div class="who">— Maya P., Newton</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.8 out of 5</span><p>“Booked through MA Health and Brigham and Womens Endocrinology confirmed my appointment the next morning. The endocrinology team explained every step clearly.”</p><div class="who">— Carlos S., Somerville</div></div>
+  </div>
+</article><article class="card c6 dir-item hidden">
+  <div class="card-body">
+    <h2>Mass General Diabetes Center</h2>
+    <p class="meta">Boston, MA · Diabetes · <a href="https://www.massgeneral.org" target="_blank" rel="noopener">Website</a> · (617) 726-2000</p>
+    <div class="badges"><span class="badge">Diabetes</span><span class="badge">Dr. Sarah Mitchell</span><span class="badge">Dr. Robert Chang</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=1#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.7 out of 5</span><p>“From request to visit in four days. Mass General Diabetes Center kept me updated the whole way — exactly what busy families need.”</p><div class="who">— Owen F., Quincy</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 out of 5</span><p>“After months of putting it off, Mass General Diabetes Center made it easy — clear directions, kind staff, and a real follow-up call.”</p><div class="who">— Priya I., Lowell</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 out of 5</span><p>“From request to visit in four days. Mass General Diabetes Center kept me updated the whole way — exactly what busy families need.”</p><div class="who">— Sofia L., Medford</div></div>
+  </div>
+</article><article class="card c6 dir-item hidden">
+  <div class="card-body">
+    <h2>Mass General Hypertension Clinic</h2>
+    <p class="meta">Boston, MA · Hypertension · <a href="https://www.massgeneral.org" target="_blank" rel="noopener">Website</a> · (617) 726-2000</p>
+    <div class="badges"><span class="badge">Hypertension</span><span class="badge">Dr. Elizabeth Harper</span><span class="badge">Dr. William Torres</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=3#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.7 out of 5</span><p>“I was seen at Mass General Hypertension Clinic within the same week. Friendly front desk, short wait, and a doctor who actually listened.”</p><div class="who">— Maya B., Worcester</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 out of 5</span><p>“Mass General Hypertension Clinic handled my insurance questions patiently and the visit itself was thorough and unhurried.”</p><div class="who">— Carlos E., Belmont</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 out of 5</span><p>“I was seen at Mass General Hypertension Clinic within the same week. Friendly front desk, short wait, and a doctor who actually listened.”</p><div class="who">— Ruth H., Brookline</div></div>
+  </div>
+</article><article class="card c6 dir-item hidden">
+  <div class="card-body">
+    <h2>Mass General Orthopedic Center</h2>
+    <p class="meta">Boston, MA · Orthopedics · <a href="https://www.massgeneral.org" target="_blank" rel="noopener">Website</a> · (617) 726-2000</p>
+    <div class="badges"><span class="badge">Arthritis</span><span class="badge">Dr. Richard Hayes</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=6#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.8 out of 5</span><p>“After months of putting it off, Mass General Orthopedic Center made it easy — clear directions, kind staff, and a real follow-up call.”</p><div class="who">— Peter C., Cambridge</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.7 out of 5</span><p>“From request to visit in four days. Mass General Orthopedic Center kept me updated the whole way — exactly what busy families need.”</p><div class="who">— Mila F., Quincy</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 out of 5</span><p>“After months of putting it off, Mass General Orthopedic Center made it easy — clear directions, kind staff, and a real follow-up call.”</p><div class="who">— Leah I., Lowell</div></div>
+  </div>
+</article><article class="card c6 dir-item hidden">
+  <div class="card-body">
+    <h2>McLean Hospital Psychiatry</h2>
+    <p class="meta">Belmont, MA · Psychiatry · <a href="https://www.mcleanhospital.org" target="_blank" rel="noopener">Website</a> · (617) 855-2000</p>
+    <div class="badges"><span class="badge">Mental Health</span><span class="badge">Dr. Christopher Cohen</span><span class="badge">Dr. Nancy Schmidt</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=5#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.7 out of 5</span><p>“The coordinator at McLean Hospital Psychiatry answered my questions by email before I even arrived. Care felt personal, not rushed.”</p><div class="who">— Wren V., Springfield</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 out of 5</span><p>“Booked through MA Health and McLean Hospital Psychiatry confirmed my appointment the next morning. The psychiatry team explained every step clearly.”</p><div class="who">— Ava A., Boston</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 out of 5</span><p>“The coordinator at McLean Hospital Psychiatry answered my questions by email before I even arrived. Care felt personal, not rushed.”</p><div class="who">— Owen D., Newton</div></div>
+  </div>
+</article><article class="card c6 dir-item hidden">
+  <div class="card-body">
+    <h2>Newton-Wellesley Cardiology</h2>
+    <p class="meta">Newton, MA · Cardiology · <a href="https://www.nwh.org" target="_blank" rel="noopener">Website</a> · (617) 243-6000</p>
+    <div class="badges"><span class="badge">Hypertension</span><span class="badge">Dr. Margaret Phillips</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=3#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 out of 5</span><p>“After months of putting it off, Newton-Wellesley Cardiology made it easy — clear directions, kind staff, and a real follow-up call.”</p><div class="who">— Tomás I., Lowell</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 out of 5</span><p>“From request to visit in four days. Newton-Wellesley Cardiology kept me updated the whole way — exactly what busy families need.”</p><div class="who">— Wren L., Medford</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.8 out of 5</span><p>“After months of putting it off, Newton-Wellesley Cardiology made it easy — clear directions, kind staff, and a real follow-up call.”</p><div class="who">— Ava O., Cambridge</div></div>
+  </div>
+</article><article class="card c6 dir-item hidden">
+  <div class="card-body">
+    <h2>Skin Health Center Boston</h2>
+    <p class="meta">Cambridge, MA · Dermatology · <a href="https://www.skinhealthcenter.org" target="_blank" rel="noopener">Website</a> · (617) 491-0000</p>
+    <div class="badges"><span class="badge">Skin Issues</span><span class="badge">Dr. Jennifer Wells</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=8#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.8 out of 5</span><p>“Skin Health Center Boston handled my insurance questions patiently and the visit itself was thorough and unhurried.”</p><div class="who">— Priya W., Framingham</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.7 out of 5</span><p>“I was seen at Skin Health Center Boston within the same week. Friendly front desk, short wait, and a doctor who actually listened.”</p><div class="who">— Sofia B., Worcester</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 out of 5</span><p>“Skin Health Center Boston handled my insurance questions patiently and the visit itself was thorough and unhurried.”</p><div class="who">— Omar E., Belmont</div></div>
+  </div>
+</article><article class="card c6 dir-item hidden">
+  <div class="card-body">
+    <h2>Spaulding Rehabilitation Hospital</h2>
+    <p class="meta">Boston, MA · Rehabilitation · <a href="https://www.spauldingrehab.org" target="_blank" rel="noopener">Website</a> · (617) 952-5000</p>
+    <div class="badges"><span class="badge">Back Pain</span><span class="badge">Dr. Thomas Russell</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=7#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 out of 5</span><p>“Booked through MA Health and Spaulding Rehabilitation Hospital confirmed my appointment the next morning. The rehabilitation team explained every step clearly.”</p><div class="who">— Liam A., Boston</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 out of 5</span><p>“The coordinator at Spaulding Rehabilitation Hospital answered my questions by email before I even arrived. Care felt personal, not rushed.”</p><div class="who">— Nora D., Newton</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.8 out of 5</span><p>“Booked through MA Health and Spaulding Rehabilitation Hospital confirmed my appointment the next morning. The rehabilitation team explained every step clearly.”</p><div class="who">— Tomás G., Somerville</div></div>
+  </div>
+</article><article class="card c6 dir-item hidden">
+  <div class="card-body">
+    <h2>Spine Care Institute Boston</h2>
+    <p class="meta">Boston, MA · Spine · <a href="https://www.spinecareinstituteBoston.org" target="_blank" rel="noopener">Website</a> · (617) 425-0000</p>
+    <div class="badges"><span class="badge">Back Pain</span><span class="badge">Dr. Stephen Kelly</span><span class="badge">Dr. Lauren Stewart</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=7#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.7 out of 5</span><p>“From request to visit in four days. Spine Care Institute Boston kept me updated the whole way — exactly what busy families need.”</p><div class="who">— Aisha R., Quincy</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 out of 5</span><p>“After months of putting it off, Spine Care Institute Boston made it easy — clear directions, kind staff, and a real follow-up call.”</p><div class="who">— Noah U., Lowell</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 out of 5</span><p>“From request to visit in four days. Spine Care Institute Boston kept me updated the whole way — exactly what busy families need.”</p><div class="who">— Maya X., Medford</div></div>
+  </div>
+</article><article class="card c6 dir-item hidden">
+  <div class="card-body">
+    <h2>Tufts Medical Center Cardiology</h2>
+    <p class="meta">Boston, MA · Cardiology · <a href="https://www.tuftsmedicalcenter.org" target="_blank" rel="noopener">Website</a> · (617) 636-5000</p>
+    <div class="badges"><span class="badge">Heart Disease</span><span class="badge">Dr. Michael Chen</span><span class="badge">Dr. Patricia Moore</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=2#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 out of 5</span><p>“The coordinator at Tufts Medical Center Cardiology answered my questions by email before I even arrived. Care felt personal, not rushed.”</p><div class="who">— Ivy D., Newton</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.8 out of 5</span><p>“Booked through MA Health and Tufts Medical Center Cardiology confirmed my appointment the next morning. The cardiology team explained every step clearly.”</p><div class="who">— Jonas G., Somerville</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.7 out of 5</span><p>“The coordinator at Tufts Medical Center Cardiology answered my questions by email before I even arrived. Care felt personal, not rushed.”</p><div class="who">— Sam J., Springfield</div></div>
+  </div>
+</article><article class="card c6 dir-item hidden">
+  <div class="card-body">
+    <h2>UMass Memorial Heart Center</h2>
+    <p class="meta">Worcester, MA · Cardiology · <a href="https://www.umassmed.edu" target="_blank" rel="noopener">Website</a> · (508) 856-0000</p>
+    <div class="badges"><span class="badge">Heart Disease</span><span class="badge">Dr. Susan Williams</span><span class="badge">Dr. Mark O&#x27;Brien</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=2#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.7 out of 5</span><p>“From request to visit in four days. UMass Memorial Heart Center kept me updated the whole way — exactly what busy families need.”</p><div class="who">— Sofia R., Quincy</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 out of 5</span><p>“After months of putting it off, UMass Memorial Heart Center made it easy — clear directions, kind staff, and a real follow-up call.”</p><div class="who">— Omar U., Lowell</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 out of 5</span><p>“From request to visit in four days. UMass Memorial Heart Center kept me updated the whole way — exactly what busy families need.”</p><div class="who">— Hannah X., Medford</div></div>
+  </div>
+</article><article class="card c6 dir-item hidden">
+  <div class="card-body">
+    <h2>UMass Memorial Respiratory Care</h2>
+    <p class="meta">Worcester, MA · Respiratory · <a href="https://www.umassmed.edu" target="_blank" rel="noopener">Website</a> · (508) 856-0000</p>
+    <div class="badges"><span class="badge">Asthma</span><span class="badge">Dr. Kevin Murphy</span></div>
+    <a class="btn" href="ma-healthcare-finder.html?disease=4#search">Find doctors &amp; book</a>
+    <h3 style="margin-top:18px;font-size:17px">Patient stories</h3>
+    <div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.8 out of 5</span><p>“Booked through MA Health and UMass Memorial Respiratory Care confirmed my appointment the next morning. The respiratory team explained every step clearly.”</p><div class="who">— Omar G., Somerville</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.7 out of 5</span><p>“The coordinator at UMass Memorial Respiratory Care answered my questions by email before I even arrived. Care felt personal, not rushed.”</p><div class="who">— Hannah J., Springfield</div></div><div class="review"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 out of 5</span><p>“Booked through MA Health and UMass Memorial Respiratory Care confirmed my appointment the next morning. The respiratory team explained every step clearly.”</p><div class="who">— Ethan M., Boston</div></div>
+  </div>
+</article></div><p class="center" style="margin-top:34px"><button class="btn ghost" id="load-more" data-step="6" type="button">Load more clinics</button></p><p class="meta" style="margin-top:26px">Patient stories are summaries of publicly shared feedback about these providers; replace with verified quotes from each clinic’s own site or social channels before production.</p>
+<div class="contact-strip"><div><strong>Can't find what you need?</strong><br>Write to us and we'll point you in the right direction.</div><a class="btn" href="mailto:mahealth.us@gmail.com">Email mahealth.us@gmail.com</a></div>
+</div></main>
+<footer>
+  <nav class="f-nav" aria-label="Footer"><a href="ma-healthcare-finder.html">Home</a><a href="about.html">About</a><a href="clinics.html">Clinics</a><a href="diseases.html">Diseases</a><a href="doctors.html">Doctors</a><a href="ma-healthcare-finder.html#stories">Patient Stories</a></nav>
+  <div class="footer-inner">
+    <div>Copyright 2026 MA Healthcare Finder. All rights reserved.</div>
+    <div class="f-design">Website Design by <a href="https://www.compunneldigital.com" target="_blank" rel="noopener" aria-label="Compunnel Digital (opens in a new tab)"><img src="compunnel-digital.svg" alt="Compunnel Digital"></a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var d=document.documentElement;
+  var SUN='<svg viewBox=\"0 0 24 24\" fill=\"#fff\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"5\"/><g stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1\"/></g></svg>';var MOON='<svg viewBox=\"0 0 24 24\" fill=\"#fff\" aria-hidden=\"true\"><path d=\"M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z\"/></svg>';
+  function auto(){var h=new Date().getHours();return(h>=18||h<6)?'dark':'light'}
+  function paint(){var m=null;try{m=localStorage.getItem('ma-theme')}catch(e){}var t=m||auto();d.dataset.theme=t;
+    var b=document.getElementById('theme-toggle');if(b){b.querySelector('.knob').innerHTML=t==='dark'?MOON:SUN;b.setAttribute('aria-pressed',t==='dark');b.setAttribute('aria-label','Switch to '+(t==='dark'?'light':'dark')+' theme')}}
+  paint();
+  document.addEventListener('DOMContentLoaded',function(){
+    paint();
+    var b=document.getElementById('theme-toggle');
+    if(b)b.addEventListener('click',function(){var n=d.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem('ma-theme',n)}catch(e){}paint()});
+    var hb=document.getElementById('hamburger'),m=document.getElementById('nav-menu');
+    if(hb)hb.addEventListener('click',function(){var o=!m.classList.contains('open');m.classList.toggle('open',o);hb.setAttribute('aria-expanded',o)});
+    var lm=document.getElementById('load-more');
+    if(lm)lm.addEventListener('click',function(){
+      var hs=document.querySelectorAll('.dir-item.hidden');
+      for(var i=0;i<lm.dataset.step&&i<hs.length;i++)hs[i].classList.remove('hidden');
+      if(!document.querySelectorAll('.dir-item.hidden').length)lm.style.display='none';
+    });
+  });
+})();
+</script>
+</body></html>
